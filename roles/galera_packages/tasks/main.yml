@@ -5,6 +5,10 @@
     - MariaDB-client
     - MariaDB-server
     - galera
+  register: cmd_result
+  retries: 50
+  until: cmd_result | success
+   
 
 - name: Install percona-xtrabackup packages
   yum: name={{ item }} state=present
