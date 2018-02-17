@@ -1,0 +1,20 @@
+can start master node
+can not join other nodes
+
+```
+Feb 17 12:40:13 localhost mysqld: 2018-02-17 12:40:13 140113090696960 [Note] WSREP: (4f52eb98, 'tcp://0.0.0.0:4567') turning message relay requesting off
+
+
+
+
+
+
+Feb 17 12:41:51 localhost mysqld: WSREP_SST: [ERROR] Possible timeout in receving first data from donor in gtid stage (20180217 12:41:51.748)
+Feb 17 12:41:51 localhost mysqld: WSREP_SST: [ERROR] Cleanup after exit with status:32 (20180217 12:41:51.756)
+Feb 17 12:41:51 localhost mysqld: 2018-02-17 12:41:51 140113073608448 [ERROR] WSREP: Failed to read 'ready <addr>' from: wsrep_sst_xtrabackup-v2 --role 'joiner' --address '192.168.1.118' --datadir '/var/lib/mysql/'   --parent '25133'  ''
+Feb 17 12:41:51 localhost mysqld: Read: '(null)'
+Feb 17 12:41:51 localhost mysqld: 2018-02-17 12:41:51 140113073608448 [ERROR] WSREP: Process completed with error: wsrep_sst_xtrabackup-v2 --role 'joiner' --address '192.168.1.118' --datadir '/var/lib/mysql/'   --parent '25133'  '' : 32 (Broken pipe)
+Feb 17 12:41:51 localhost mysqld: 2018-02-17 12:41:51 140113073911552 [ERROR] WSREP: Failed to prepare for 'xtrabackup-v2' SST. Unrecoverable.
+Feb 17 12:41:51 localhost mysqld: 2018-02-17 12:41:51 140113073911552 [ERROR] Aborting
+
+```
